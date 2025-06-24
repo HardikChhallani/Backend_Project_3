@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  padding: 2rem;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Forms */
+form {
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Posts Section */
+#posts {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.post {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.post p {
+  margin: 0.5rem 0;
+}
+
+/* Link-like text */
+p[onclick] {
+  text-align: center;
+  color: #4a90e2;
+  margin-top: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
