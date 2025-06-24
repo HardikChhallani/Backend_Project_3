@@ -6,66 +6,26 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 id="formTitle">Aryan Delawadia 22BCE2736</h1>
-  <h1 id="formTitle">Login</h1>
+  <div class="container-center">
+    <header>
+      <h1>Hardik Chhallani - 22BCE2454</h1>
+      <h2 id="formTitle">Login</h2>
+    </header>
 
-  <form id="authForm">
-    <input type="text" id="username" placeholder="Username" required />
-    <input type="password" id="password" placeholder="Password" required />
-    <button type="submit">Submit</button>
-  </form>
+    <main>
+      <form id="authForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Submit</button>
+      </form>
 
-  <p style="text-align: center; cursor: pointer;" onclick="toggleForm()">
-    Switch to Register
-  </p>
-
-    <table border="1" cellpadding="10" cellspacing="0" style="margin: 2rem auto; border-collapse: collapse; text-align: center;">
-    <thead style="background-color: #f2f2f2;">
-      <tr>
-        <th>Operation</th>
-        <th>Admin</th>
-        <th>Editor</th>
-        <th>User</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Create Post</td>
-        <td>✅</td>
-        <td>❌</td>
-        <td>✅</td>
-      </tr>
-      <tr>
-        <td>Read All Posts</td>
-        <td>✅</td>
-        <td>✅</td>
-        <td>❌ (only own)</td>
-      </tr>
-      <tr>
-        <td>Update Any Post</td>
-        <td>✅</td>
-        <td>✅</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>Delete Any Post</td>
-        <td>✅</td>
-        <td>❌</td>
-        <td>❌</td>
-      </tr>
-      <tr>
-        <td>View Post Writer Info</td>
-        <td>✅</td>
-        <td>✅</td>
-        <td>✅</td>
-      </tr>
-    </tbody>
-  </table>
-
-
+      <p onclick="toggleForm()">
+        Switch to Register
+      </p>
+    </main>
+  </div>
   <script>
     let isLogin = true;
-
     function toggleForm() {
       isLogin = !isLogin;
       document.getElementById("formTitle").innerText = isLogin ? "Login" : "Register";
