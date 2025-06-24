@@ -21,3 +21,6 @@ app.get('*', (req, res) => {
 mongoose.connect(process.env.MONGO_URI)
   .then(() => app.listen(5000, () => console.log('Server running on http://localhost:5000')))
   .catch(err => console.log(err));
+
+  const User = require('./models/User');
+

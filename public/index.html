@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1>Welcome!</h1>
+  <div id="userInfo"></div>
   <button onclick="logout()">Logout</button>
 
   <form id="postForm">
@@ -14,9 +15,17 @@
     <textarea id="content" placeholder="Content" required></textarea>
     <button type="submit">Add Post</button>
   </form>
+  <form id="editForm" style="display:none; margin-bottom: 2rem;">
+    <input type="text" id="editTitle" placeholder="Edit Title" required />
+    <textarea id="editContent" placeholder="Edit Content" required></textarea>
+    <button type="submit">Update Post</button>
+    <button type="button" onclick="cancelEdit()">Cancel</button>
+  </form>
+
 
   <div id="posts"></div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
